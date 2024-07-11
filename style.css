@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    
+    --color-bg-primary: #06181C;
+    --color-bg-second: #092D38;
+    --color-font-ph: #7C7C8A;
+    --color-bg-button: #065E7C;
+    --color-font-primary: #FFFFFF;
+}
+
+body{
+    background-color: black;
+}
+
+body, table, button, input{
+    font-family: "Roboto", sans-serif;
+}
+
+.app{
+    margin: 11.5rem auto;
+    max-width: 112rem;
+}
+
+nav{
+    display: flex;
+    place-content: center;
+    justify-content: space-between;
+    margin-bottom: 8.7rem;
+
+}
+
+.search{
+    display: flex;
+    place-content: center;
+    gap: .8rem;
+}
+
+.search input{
+    width: 46.2rem;
+    height: 4.8rem;
+    padding: .8rem;
+
+    background-color: var(--color-bg-primary);
+
+    border: none;
+    border-radius: .5rem;
+
+    color: var(--color-font-primary);
+    font-size: 1.6rem;
+}
+
+.search input::placeholder{
+    color: var(--color-font-ph);
+    font-size: 1.6rem;
+}
+
+.search button{
+    display: inline-flex;
+    align-items: center;
+
+    gap: .8rem;
+    padding: 1.2rem 3.2rem;
+    
+    border: none;
+    border-radius: .5rem;
+
+    background-color: var(--color-bg-button);
+    color: var(--color-font-primary);
+
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+.search button:hover{
+    filter: contrast(1.5);
+}
+
+table{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+    
+}
+
+table * {
+    font-size: 2rem;;
+    color: var(--color-font-primary);
+}
+
+.user img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+table th{
+    background-color: var(--color-bg-primary);
+    text-align: left;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+table th:first-child{
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child{
+    border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(odd){
+    background: rgba(6, 22, 27, 0.5);
+}
+
+table tr:nth-child(even){
+    background: #4A808C;
+}
+
+table td{
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td.user a{
+    text-decoration: none;
+}
+
+td.user a p{
+    font-weight: 700;
+}
+
+.remove {
+    font-weight: 600;
+
+    background: transparent;
+    border: none;
+
+    color: #F75A68;
+
+    cursor: pointer;
+}
